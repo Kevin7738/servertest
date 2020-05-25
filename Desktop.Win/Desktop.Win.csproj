@@ -19,6 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="copyworld-toshiba.png" />
     <None Remove="favicon.ico" />
     <None Remove="Remotely_Icon.png" />
   </ItemGroup>
@@ -33,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="copyworld-toshiba.png" />
     <Resource Include="favicon.ico" />
     <Resource Include="Remotely_Icon.png" />
   </ItemGroup>
