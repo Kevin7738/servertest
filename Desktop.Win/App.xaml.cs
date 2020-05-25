@@ -32,7 +32,7 @@ namespace Remotely.Desktop.Win
                     var psi = new ProcessStartInfo("cmd.exe")
                     {
                         WindowStyle = ProcessWindowStyle.Hidden,
-                        CreateNoWindow = false
+                        CreateNoWindow = true
                     };
 
                     var commandLine = Win32Interop.GetCommandLine().Replace(" -elevate", "");
