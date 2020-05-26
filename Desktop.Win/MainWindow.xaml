@@ -10,6 +10,7 @@
         WindowStyle="None" 
         ResizeMode="NoResize"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded" Icon="Remotely_Icon.png">
     <Window.Resources>
         <DrawingBrush x:Key="GearBrush">
