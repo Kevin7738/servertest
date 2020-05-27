@@ -52,9 +52,7 @@
 
 
   <ItemGroup>
-    <Compile Update="Services\WindowsService.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Update="Services\WindowsService.cs" />
   </ItemGroup>
 
   <ItemGroup>
