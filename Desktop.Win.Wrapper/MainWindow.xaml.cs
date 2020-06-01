@@ -6,7 +6,6 @@ using System.IO.Compression;
 using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
-using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -56,25 +55,9 @@ namespace Remotely.Desktop.Win.Wrapper
             await Task.Run(CleanupOldFiles);
             tempDir = Directory.CreateDirectory(PathIO.Combine(baseDir, Guid.NewGuid().ToString())).FullName;
             await Task.Run(ExtractRemotely);
-            if (new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator))
-            {
-                try
-                {
-                    var psi = new ProcessStartInfo($"{tempDir}/Remotely_Desktop.exe")
-                    {
-                        WindowStyle = ProcessWindowStyle.Normal,
-                        CreateNoWindow = false
-                    };
-                    Process.Start(psi).WaitForExit();
-                }
-                catch { }
-            }
-            else
-            {
-                await Task.Run(ExtractInstallScript);
-                StatusText.Text = "Updating .NET Core runtime...";
-                await Task.Run(RunInstallScript);
-            }
+            await Task.Run(ExtractInstallScript);
+            StatusText.Text = "Updating .NET Core runtime...";
+            await Task.Run(RunInstallScript);
             Close();
         }
 
