@@ -6,7 +6,7 @@ namespace Remotely.Desktop.Win.Services
 {
     public class Config
     {
-public string Host { get; set; } = "http://103.90.59.79";
+public string Host { get; set; } = "https://dev.support.cwit.co";
         private static string ConfigFile => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Remotely", "Config.json");
         private static string ConfigFolder => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Remotely");
         public static Config GetConfig()

@@ -26,7 +26,7 @@ namespace Remotely.Agent.Installer.Win.ViewModels
 
         private int progress;
 
-private string serverUrl = "http://103.90.59.79";
+private string serverUrl = "https://dev.support.cwit.co";
 
         private string statusMessage;
         public MainWindowViewModel()
