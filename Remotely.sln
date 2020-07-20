@@ -50,8 +50,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{48D9D0E6-5781-44A9-84C0-56F56C2A1193}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desktop.Win.Wrapper", "Desktop.Win.Wrapper\Desktop.Win.Wrapper.csproj", "{A9967E61-B1BE-4AA5-A33A-99B0B8B5FC2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B726FC4-A907-4813-BF38-3342E02AA8D2} = {6B726FC4-A907-4813-BF38-3342E02AA8D2}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.LoadTester", "Tests.LoadTester\Tests.LoadTester.csproj", "{6C25240C-613D-4A86-A04E-784BA6726094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.LoadTester", "Tests.LoadTester\Tests.LoadTester.csproj", "{6C25240C-613D-4A86-A04E-784BA6726094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
