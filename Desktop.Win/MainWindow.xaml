@@ -10,6 +10,7 @@
         WindowStyle="None" 
         ResizeMode="NoResize"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded" Icon="Remotely_Icon.png">
     <Window.Resources>
         <DrawingBrush x:Key="GearBrush">
@@ -31,9 +32,9 @@
         <StackPanel>
             <Border Height="50" Background="#FF464646">
                 <DockPanel Margin="10,0,0,0">
-                    <StackPanel>
-                        <TextBlock Foreground="DeepSkyBlue" FontWeight="Bold" FontSize="20" Margin="0,2,0,0">Remotely</TextBlock>
-                        <TextBlock Foreground="White" FontSize="10"><Run Text="Do IT Remotely"/></TextBlock>
+                    <StackPanel Height="54">
+                        <TextBlock Foreground="White" FontSize="12"><Run Text="Remote Assistance Tool"/></TextBlock>
+                        <Image Source="\copyworld-toshiba.png" Height="34" Width="207" RenderTransformOrigin="0.504,0.6" />
                     </StackPanel>
                     <Button Style="{StaticResource TitlebarButton}" Click="CloseButton_Click" Content="X" />
                     <Button Style="{StaticResource TitlebarButton}" Click="MinimizeButton_Click" Content="_"/>
