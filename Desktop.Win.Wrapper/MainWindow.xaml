@@ -17,7 +17,7 @@
                 <DockPanel Margin="10,0,0,0">
                     <StackPanel>
                         <TextBlock Foreground="White" FontSize="12"><Run Text="Remote Assistance Tool"/></TextBlock>
-                        <Image Source="copyworld-toshiba.png" Height="34" Width="207" RenderTransformOrigin="0.504,0.6" DataContext="{DynamicResource NormalButton}" />
+                        <Image Source="copyworld-toshiba.png" Height="34" Width="207" RenderTransformOrigin="0.504,0.6" />
                     </StackPanel>
                     <Button Style="{StaticResource TitlebarButton}" Click="CloseButton_Click" Content="X" />
                     <Button Style="{StaticResource TitlebarButton}" Click="MinimizeButton_Click" Content="_"/>
