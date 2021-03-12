@@ -7,7 +7,7 @@
     "@microsoft/signalr-protocol-msgpack": "^3.1.2",
     "@types/bootstrap": "^4.3.1",
     "@types/jquery": "^3.3.33",
-    "msgpack5": "^4.2.1"
+    "msgpack5": "^4.5.1"
   },
   "dependencies": {
     "@msgpack/msgpack": "^1.12.0"
